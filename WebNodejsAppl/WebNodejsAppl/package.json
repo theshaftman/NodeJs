@@ -1,0 +1,13 @@
+{
+  "name": "web-nodejs-appl",
+  "version": "0.0.0",
+  "description": "WebNodejsAppl",
+  "main": "app.js",
+  "author": {
+    "name": "SAGER",
+    "email": ""
+  },
+  "dependencies": {
+    "mssql": "^3.3.0"
+  }
+}
