@@ -8,6 +8,7 @@
     "email": ""
   },
   "dependencies": {
+    "jade": "^1.11.0",
     "mssql": "^3.3.0"
   }
 }

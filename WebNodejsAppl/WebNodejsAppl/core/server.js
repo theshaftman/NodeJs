@@ -1,17 +1,19 @@
 ﻿var http = require("http");
+var fs = require("fs");
+
 var settings = require("../settings");
 var employee = require("../controllers/employee");
-var querystring = require("querystring");
+var home = require("../controllers/home");
 
-http.createServer(function (request, response) {
+http.createServer(function (request, response) {    
     switch (request.method) {
         case "GET":
             if (request.url === "/") {
-                response.end();
+                home.load(request, response);
             }
-            else if (request.url === "/employees") {
+            else if (request.url === "/getEmployees") {
                 employee.getList(request, response);
-            }            
+            }
             break;
         case "POST":
             break;

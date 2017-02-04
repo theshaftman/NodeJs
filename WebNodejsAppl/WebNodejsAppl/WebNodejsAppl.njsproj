@@ -32,16 +32,28 @@
   <ItemGroup>
     <Compile Include="app.js" />
     <Compile Include="controllers\employee.js" />
+    <Compile Include="controllers\home.js" />
     <Compile Include="core\db.js" />
     <Compile Include="core\server.js" />
+    <Compile Include="public\javascripts\jquery-3.1.1.js" />
+    <Compile Include="scripts\plugins\jquery-3.1.1.js" />
+    <Compile Include="scripts\plugins\jquery-3.1.1.min.js" />
     <Compile Include="settings.js" />
     <Content Include="package.json" />
     <Content Include="README.md" />
+    <Compile Include="scripts\plugins\jquery.dataTables.min.js" />
     <Content Include="views\error500.html" />
+    <Content Include="views\home.html" />
+    <Content Include="views\home.jade" />
+    <Content Include="views\layout.jade" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="controllers\" />
     <Folder Include="core\" />
+    <Folder Include="public\" />
+    <Folder Include="public\javascripts\" />
+    <Folder Include="scripts\" />
+    <Folder Include="scripts\plugins\" />
     <Folder Include="views\" />
   </ItemGroup>
   <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
