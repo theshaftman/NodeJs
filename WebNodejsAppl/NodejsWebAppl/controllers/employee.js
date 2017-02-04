@@ -37,9 +37,8 @@ exports.getEmployee = function (request, response) {
 
 // Post
 exports.addEmployee = function (request, response) {
-    var query = url.parse(request.url, true).query;
-    var employeeName = query.Name;
-    var employeeAge = query.Age;
+    var employeeName = request.body["Name"];
+    var employeeAge = request.body["Age"];
         
     db.executeSql("INSERT INTO " + settings.dbTable + " ([Name], [Age]) " +
     "VALUES('" + employeeName + "', " + employeeAge + ")", function (data, err) {
@@ -56,10 +55,9 @@ exports.addEmployee = function (request, response) {
 };
 
 exports.updateEmployee = function (request, response) {
-    var query = url.parse(request.url, true).query;
-    var employeeId = query.Id;
-    var employeeName = query.Name;
-    var employeeAge = query.Age;
+    var employeeId = request.body["Id"];
+    var employeeName = request.body["Name"];
+    var employeeAge = request.body["Age"];
     
     db.executeSql("UPDATE " + settings.dbTable + " " +
     "SET [Name] = '" + employeeName + "', [Age] = " + employeeAge + " " +
