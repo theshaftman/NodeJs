@@ -1,8 +1,9 @@
 ﻿var Controller = (function () {
+    var tableId = "getTable";
     var model = new ViewModel();
 
     function init() {
-        model.load();
+        model.loadTable(tableId);
     }
 
     return {

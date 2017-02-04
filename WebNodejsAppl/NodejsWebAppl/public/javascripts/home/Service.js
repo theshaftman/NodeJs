@@ -35,10 +35,33 @@
         
         return null;
     }
+    
+    function options() {
+        var dfd = $.Deferred();
+        var settings = {
+            dom: "Bfrtip", 
+            columns: [
+                {
+                    data: null, render: function (data, type, row) {
+                        return "<input type=\"checkbox\" />";
+                    }
+                },
+                { data: "ID", title: "Id" },
+                { data: "Name", title: "Name" },
+                { data: "Age", title: "Age" }
+            ],
+            select: true,
+            pageLength: 7
+        }
+        
+        dfd.resolve(settings);
+        return dfd;
+    }
         
     return {
         getData: getData,
         modifyData: modifyData,
-        deleteData: deleteData
+        deleteData: deleteData,
+        options: options
     }
 }());
