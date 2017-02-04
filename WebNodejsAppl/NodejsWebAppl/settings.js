@@ -8,3 +8,4 @@ exports.dbConfig = {
 };
 
 exports.webPort = 8888;
+exports.dbTable = "[Test].[dbo].[TableA]";
