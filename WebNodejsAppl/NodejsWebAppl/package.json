@@ -1,16 +1,16 @@
 {
-  "name": "web-nodejs-appl",
+  "name": "nodejs-web-appl",
   "version": "0.0.0",
-  "description": "WebNodejsAppl",
+  "description": "NodejsWebAppl",
   "main": "app.js",
   "author": {
     "name": "SAGER",
     "email": ""
   },
   "dependencies": {
-    "express": "^4.14.1",
-    "jade": "^1.11.0",
+    "express": "3.4.4",
+    "jade": "*",
     "mssql": "^3.3.0",
-    "stylus": "^0.54.5"
+    "stylus": "*"
   }
 }

@@ -11,7 +11,8 @@ exports.load = function (request, response) {
     var data = fs.readFileSync("./views/home.html");
     var layoutLoad = jade.compileFile('./views/home.jade');
     response.writeHead(200, { "Content-Type": "text/html" });
-    response.write(layoutLoad({ title: "Test" }));
+    // response.write(layoutLoad({ title: "Test" }));
+    response.write(data.toString());
         
     response.end();
 }

@@ -1,0 +1,13 @@
+﻿extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  table#getTable
+
+  script(type="text/javascript" src="/javascripts/home/Service.js")
+  script(type="text/javascript" src="/javascripts/home/ViewModel.js")
+  script(type="text/javascript" src="/javascripts/home/Controller.js")
+
+  script.
+    Controller.init();
