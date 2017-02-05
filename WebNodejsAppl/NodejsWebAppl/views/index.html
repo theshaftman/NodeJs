@@ -35,7 +35,7 @@
                         <div class="form-group">
                             <input type="text" placeholder="Email" name="username" class="form-control">
                         </div>
-                        <button type="submit" class="btn btn-success">Sign in</button>
+                        <button id="loginSubmit" type="submit" class="btn btn-success">Sign in</button>
                     </div>
                 </form>
             </div>  
@@ -45,6 +45,26 @@
     <div class="container">
         <div class="main">
             <table id="getTable" class="table table-striped table-bordered dataTable no-footer"></table>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Wrong username</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    You have entered a wrong username. Please write your name correctly!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
         </div>
     </div>
 </body>

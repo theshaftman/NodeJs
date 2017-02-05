@@ -23,10 +23,10 @@
     }
     
     self.loadTable = function (tableId) {
-        Service.options().done(function (resp) {
-            self.dataTable = $("#" + tableId).DataTable(resp);
-            
-            Service.getData(window.location.origin + "/getEmployees").done(function (response) {
+        Service.getData(window.location.origin + "/getEmployees").done(function (response) {
+            Service.options(response).done(function (resp) {
+                self.dataTable = $("#" + tableId).DataTable(resp);
+
                 self.dataTable
                     .rows.add(response)
                     .draw()
