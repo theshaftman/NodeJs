@@ -3,6 +3,7 @@
     var model = new ViewModel();
 
     function init() {
+        model.loadUser();
         model.loadTable(tableId);
     }
 

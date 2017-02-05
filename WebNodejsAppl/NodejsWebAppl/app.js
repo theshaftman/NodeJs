@@ -4,9 +4,11 @@
  */
 
 var express = require('express');
+var path = require('path');
+var cookieParser = require("cookie-parser");
+
 var settings = require("./settings");
 var server = require("./core/server");
-var path = require('path');
 
 var app = express();
 
@@ -22,6 +24,7 @@ app.use(express.methodOverride());
 app.use(app.router);
 app.use(require('stylus').middleware(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(cookieParser());
 
 // development only
 if ('development' == app.get('env')) {

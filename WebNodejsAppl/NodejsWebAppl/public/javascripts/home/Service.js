@@ -51,7 +51,7 @@
                 { data: "Age", title: "Age" }
             ],
             select: true,
-            pageLength: 7
+            pageLength: 6
         }
         
         dfd.resolve(settings);
