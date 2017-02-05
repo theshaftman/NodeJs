@@ -16,9 +16,12 @@ exports.postUser = function (request, response) {
 }
 
 exports.getUser = function (request, response) {
-    var cookies = request.headers.cookie.split(";");
-    cookies = cookies.filter(function (x) { return x.indexOf(settings.cookieName) != -1 });
-    var cookie = cookies.length > 0 ? cookies[0].split("%3D")[1] : null;
+    var cookie = "";
+    if (request.headers.cookie) {
+        var cookies = request.headers.cookie.split(";");
+        cookies = cookies.filter(function (x) { return x.indexOf(settings.cookieName) != -1 });
+        cookie = cookies.length > 0 ? cookies[0].split("%3D")[1] : null;        
+    }   
 
     response.writeHead(200, { "Content-Type": "application/json" });
     response.write(JSON.stringify({ cookieName: cookie }));
