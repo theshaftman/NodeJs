@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  padding: 0;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+a {
+  color: #00b7ff;
+}
+.main {
+  margin-top: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+table {
+  width: 100%;
+}
+table tr {
+  height: 30px;
+}
+.dataTables_paginate a {
+  padding: 6px;
+  margin: 2px;
+  color: #337ab7;
+  border: 1px solid #337ab7;
+}
+.dataTables_paginate a:hover {
+  color: #fff;
+  text-decoration: none;
+  background-color: #00b7ff;
+}

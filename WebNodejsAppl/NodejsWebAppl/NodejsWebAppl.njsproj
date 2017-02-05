@@ -47,8 +47,10 @@
     <Content Include="public\stylesheets\bootstrap-3.3.5\fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="public\stylesheets\bootstrap.min.css" />
     <Content Include="public\stylesheets\datatables.min.css" />
+    <Content Include="public\stylesheets\style.css" />
     <Content Include="public\stylesheets\style.styl" />
     <Content Include="README.md" />
+    <Content Include="views\index.html" />
     <Content Include="views\index.jade" />
     <Content Include="views\layout.jade" />
   </ItemGroup>
