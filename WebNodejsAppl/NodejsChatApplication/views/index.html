@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="chatApp">
+<head>
+    <title></title>
+</head>
+<body>
+    <div ng-controller="userCreationCtrl as user">
+        <input type="text" ng-model="user.username" />
+        <button ng-click="user.createUser(user.username)">Submit User</button>
+    </div>
+    <div ng-controller="chatCtrl as chat">
+        <h3>Chat</h3>
+        <ul>
+            <li ng-repeat="message in chat.messages track by $index">
+                <strong>{{message.username}}</strong>
+                <span>{{message.message}}</span>
+            </li>
+        </ul>
+        <input ng-model="chat.newMessage" type="text" />
+        <button ng-click="chat.sendMessage()">send</button>
+    </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.2/socket.io.js"></script>
+
+    <script src="./scripts/appAngular.js"></script>
+    <script src="./scripts/chat/chat-controller.js"></script>
+    <script src="./scripts/user-creation/user-creation-controller.js"></script>
+</body>
+</html>

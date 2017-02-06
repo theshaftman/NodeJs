@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "NodejsWebAppl", "NodejsWebAppl\NodejsWebAppl.njsproj", "{BA41A109-1719-475B-9788-C29350FA9321}"
 EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "NodejsChatApplication", "NodejsChatApplication\NodejsChatApplication.njsproj", "{7B60DC23-1B6D-4000-9D7D-C6FDC01DC62D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{BA41A109-1719-475B-9788-C29350FA9321}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BA41A109-1719-475B-9788-C29350FA9321}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BA41A109-1719-475B-9788-C29350FA9321}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B60DC23-1B6D-4000-9D7D-C6FDC01DC62D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B60DC23-1B6D-4000-9D7D-C6FDC01DC62D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B60DC23-1B6D-4000-9D7D-C6FDC01DC62D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B60DC23-1B6D-4000-9D7D-C6FDC01DC62D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
